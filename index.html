@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="banner1" class="banner">
+    <div class="bannerInner"></div>
+    <ul class="focusList"></ul>
+    <a class="left" href="javascript:;"></a>
+    <a class="right" href="javascript:;"></a>
+</div>
+<div id="banner2" class="banner">
+    <div class="bannerInner"></div>
+    <ul class="focusList"></ul>
+    <a class="left" href="javascript:;"></a>
+    <a class="right" href="javascript:;"></a>
+</div>
+<div id="banner3" class="banner">
+    <div class="bannerInner"></div>
+    <ul class="focusList"></ul>
+    <a class="left" href="javascript:;"></a>
+    <a class="right" href="javascript:;"></a>
+</div>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+<script type="text/javascript">
+    //id,数据的url,duration,interval
+    var banner = Banner("banner1","json/data.json");
+    banner.autoMove().LRChange().focusChange();
+    Banner("banner2","json/data.json",2000,3000).LRChange();
+    Banner("banner3","json/data.json").focusChange();
+
+
+</script>
+</body>
+</html>
